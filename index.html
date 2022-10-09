@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ukrainian Wines</title>
+  </head>
+  <style>
+    .container {
+      height: 100vh;
+      width: 100%;
+    }
+    .container::before {
+      content: "";
+      background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/637/original/edem1-Large.jpeg?1655552735");
+      position: absolute;
+      background-size: cover;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+      box-shadow: rgba(0, 0, 0, 0.5) inset 0 0 0 100vw;
+    }
+    audio {
+      display: block;
+      margin: 0 auto;
+    }
+    h1 {
+      text-align: center;
+      color: white;
+      padding: 20vh 10vh 5vh 10vh;
+      font-family: "Montserrat", Arial, sans-serif;
+      font-size: 64px;
+      text-transform: uppercase;
+    }
+    h2 {
+      text-align: center;
+      color: white;
+      padding: 0 auto;
+      font-family: "Montserrat", Arial, sans-serif;
+      text-transform: uppercase;
+    }
+    h4 {
+      text-align: center;
+      color: white;
+      padding: 0 auto;
+      font-family: "Montserrat", Arial, sans-serif;
+    }
+    p {
+      text-indent: 5%;
+      color: #272d30;
+      padding: 10px;
+      line-height: 1.3;
+      font-family: "Montserrat", Arial, sans-serif;
+    }
+    a {
+      color: #692f47;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      min-height: 300px;
+      object-fit: cover;
+    }
+    button {
+      display: block;
+      margin: 0 auto;
+      padding: 30px 30px;
+      background-color: #fff;
+      color: #692f47;
+      border: 2px solid;
+      border-radius: 40px;
+      font-size: 24px;
+      transition: all 200ms ease-in-out;
+    }
+    button:hover {
+      color: #fff;
+      background: #692f47;
+    }
+    .coded {
+      text-align: center;
+      margin: 0 auto;
+      padding: 0;
+      font-family: "Montserrat", Arial, sans-serif;
+      font-size: 12px;
+      color: #272d30;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <audio controls loop>
+        <source
+          src="https://ucarecdn.com/98bb82f8-c719-4131-a12c-4c90ee14e17a/"
+          type="audio/mpeg"
+        />
+      </audio>
+      <h1>Wines of Ukraine</h1>
+      <h2>Beautiful land of unique wines</h2>
+      <h4>
+        <em>
+          Ukraine is not one of those countries which immediately springs to
+          mind when you think about wine production. Instead, Ukraine is one of
+          those wine countries which should be thought of as a "hidden gem".</em
+        >
+      </h4>
+    </div>
+    <p>
+      Winemaking in Ukraine has been historically predetermined: Ukraine has
+      advantageous geographical location, and its climate favors grape growing.
+      The origins of winemaking in Ukraine date back to the 4th century BC (in
+      Crimea), going 2500 years back in the present-day Odesa Region.
+    </p>
+    <p>
+      Ukraine's main wine-producing regions include Odesa region (52 thousand ha
+      of vineyards), Kherson region (20 thousand ha), Mykolaiv region (15
+      thousand ha), Zakarpattia (8 thousand ha) and Crimea. Additionally, small
+      vineyards are planted in all the regions of Ukraine. The varietal
+      diversity of grapes in Ukraine is represented by the internationally
+      selected and also several autochthonous varieties. The most renowned
+      autochthonous variety is Telti Kuyruk cultivated on in Shabo terroir. The
+      most widely planted selected variety is Odesa Black and Sukhyi Liman
+      White, while Saperavi, Aligote, Rkatsiteli, Cabernet-Sauvignon,
+      Chardonnay, and Riesling are the most popular international varieties.
+    </p>
+    <p>
+      The illegal Russian annexation of Crimea in 2014 had a profound effect on
+      Ukrainian wine production. Currently, unoccupied Ukraine holds 41,000ha of
+      vines; about the same as all of Piemonte, Italy. In Crimea there is an
+      additional 30,000ha of vines where wineries from all over Ukraine were
+      sourcing grapes. This included one of the main sparkling producers,
+      Artwinery, despite them being located in the caves of an old salt mine
+      very close to the frontlines in Donetsk. Ukraine lost more than half its
+      bottled wines, mostly semi-sweet and dessert wines. But the loss of Crimea
+      and the armed conflict in the east ironically gave a giant push to
+      Western-style dry wines, especially in Zakarpattia and the southern Odesa
+      and Kherson regions.
+      <span>
+        <a href="https://ukr.wine/about.html" target="_blank">
+          Read more
+        </a></span
+      >
+    </p>
+    <hr />
+    <button><strong>WINERIES OF UKRAINE</strong></button>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/607/original/map_1.jpg?1655487984"
+      alt="map"
+    />
+    <hr />
+    <p class="coded">Coded by Yuliia</p>
+    <script>
+      function wineries() {
+        let name = prompt("What is your name?");
+        let age = prompt("How old are you?");
+        if (age >= 18) {
+          alert("Hi, " + name + "! Welcome to the world of Ukrainian wines!");
+          window.location.href = "https://ukr.wine/wineries.html";
+        } else {
+          alert("Sorry, " + name + "! You are too young to drink alcohol!");
+          window.location.href = "https://www.google.com/";
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", wineries);
+    </script>
+  </body>
+</html>
